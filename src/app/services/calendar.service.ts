@@ -31,6 +31,9 @@ export class CalendarService {
       days[i] = {day: date.getDate(), outsideMonth: (currentMonth!==month?true:false)};
       date.setDate(date.getDate()+1);
     }
+    let a;
+    if (true)
+    a=""
 
     return days;
   }
