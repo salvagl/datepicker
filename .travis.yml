@@ -1,8 +1,10 @@
 language: node_js
 sudo: true
 dist: trusty
+
 node_js:
-  - ‘8.11.1'
+  - latest
+
 before_install:
   - export CHROME_BIN=/usr/bin/google-chrome
   - export DISPLAY=:99.0
@@ -16,4 +18,3 @@ before_install:
   - npm install
   - npm run lint
   - npm run test
-  - 
