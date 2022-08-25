@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-header"><span>{{date | beautyDate }}</span></div>
+    <div class="card-block">
+        <div class="a-week-day" *ngFor="let d of weekDays">
+            <span>{{d}}</span>
+        </div>
+        <div class="a-day" *ngFor="let day of days">
+            <!--span class="{{day.outsideMonth? 'outside': ''}}">{{day.day}}</span-->
+            <span [class.outside]="day.outsideMonth">{{day.day}}</span>
+        </div>
+    </div>
+</div>  

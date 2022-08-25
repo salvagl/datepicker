@@ -3,7 +3,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
+    "emitDecoratorMetadata":true,
+    "sourceMap": true,
+    "esModuleInterop": true,
     "types": [
+      "jest",
       "jasmine"
     ]
   },
